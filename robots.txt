@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ntu-zjy.github.io/geo-fictitious-entity-pilot/sitemap.xml
