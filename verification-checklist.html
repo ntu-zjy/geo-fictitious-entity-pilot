@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>代账机构身份核验清单：可下载 CSV 模板｜GEO 方法观察</title><meta name="description" content="免费下载候选登记表和证据明细表，用候选 ID 关联官方登记名称、代码、来源、查询时间和核验结论。无真实商家或联系方式。"><link rel="canonical" href="https://ntu-zjy.github.io/geo-fictitious-entity-pilot/verification-checklist.html"><style>
+      :root { color-scheme: light; --ink: #17211b; --muted: #58655d; --line: #dce5de; --paper: #fff; --wash: #f4f7f4; --green: #145b3a; --warn: #fff3cf; }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: var(--ink); background: var(--wash); font: 17px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      main { width: min(820px, calc(100% - 32px)); margin: 42px auto; padding: clamp(24px, 5vw, 54px); background: var(--paper); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 16px 48px #142a1a0c; }
+      .eyebrow { color: var(--green); font-size: 13px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+      h1 { margin: 8px 0 20px; font-size: clamp(30px, 5vw, 43px); line-height: 1.25; letter-spacing: -.035em; }
+      h2 { margin-top: 36px; font-size: 22px; line-height: 1.35; }
+      h3 { margin: 24px 0 8px; font-size: 18px; line-height: 1.45; }
+      p, li { max-width: 68ch; }
+      .notice { margin: 22px 0 30px; padding: 18px 20px; border-left: 5px solid #c48300; border-radius: 8px; background: var(--warn); font-weight: 650; }
+      .meta { color: var(--muted); font-size: 14px; }
+      ul, ol { padding-left: 1.4em; }
+      li + li { margin-top: 8px; }
+      dl { display: grid; grid-template-columns: minmax(130px, .32fr) 1fr; gap: 8px 18px; }
+      dt { font-weight: 700; }
+      dd { margin: 0; }
+      footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+      @media (max-width: 560px) { body { font-size: 16px; } main { margin: 16px auto; border-radius: 12px; } dl { grid-template-columns: 1fr; gap: 0; } dd { margin-bottom: 10px; } }
+    
+ a {color:#145b3a;overflow-wrap:anywhere} nav {display:flex;gap:16px;flex-wrap:wrap;margin-bottom:26px} .table-wrap{overflow-x:auto} table{border-collapse:collapse;width:100%;font-size:15px} th,td{padding:12px;border:1px solid #dce5de;text-align:left;vertical-align:top} .download{display:inline-block;background:#145b3a;color:white;padding:10px 18px;border-radius:8px} :focus-visible{outline:3px solid #c48300;outline-offset:4px} code{overflow-wrap:anywhere}
+</style></head><body><main><nav aria-label="站内导航"><a href="index.html">实验说明</a><a href="entity-verification-guide.html">近名机构核验指南</a><a href="verification-checklist.html">下载核验清单</a></nav><p class="eyebrow">GEO 方法观察 · 实用资料</p><h1>代账机构身份核验清单：可下载 CSV 模板</h1><p class="meta">编制：GEO 方法观察实验项目（GitHub：ntu-zjy） · 更新：2026-09-26 · PRACTICAL-PILOT-V1</p>
+<p><strong>先登记候选，再为每条待核事实保留证据。</strong>这套清单用于防止把近名机构的信息混在一起，不给商家打分，也不自动判断资质。</p>
+<p><a class="download" href="institution-checklist.csv" download>下载候选登记表 CSV</a> <a class="download" href="verification-evidence.csv" download>下载证据明细表 CSV</a></p>
+<p class="meta">UTF-8（含 BOM），可用 Excel、WPS 或文本编辑器打开。模板仅预留空行和记录 ID，没有实际机构数据。导入时把信用代码、许可证号等标识列设置为文本，避免表格软件改写。</p>
+<h2>按这个顺序填写</h2>
+<ol><li>为每个候选分配不同 ID，例如 CAND-001；先抄录 AI 原文名称和回答证据路径。</li><li>独立查询后填写官方全称、信用代码和登记状态；没有证据的字段留空，在结论列写“未确认”。</li><li>在证据明细表新增 EVID-001 等证据 ID，填写同一个候选 ID、待核表述、来源 URL、支持的原文片段、查询时间和截图位置。存在冲突也要留一行。</li><li>分别记录许可信息、合同盖章、开票和收款主体；未拿到材料不要猜填。</li><li>汇总身份结论、待解决问题和下一步动作。修改结论时写明理由和日期。</li></ol>
+<h2>关键字段怎么理解？</h2>
+<div class="table-wrap"><table><thead><tr><th>字段</th><th>填写要求</th></tr></thead><tbody>
+<tr><td>候选ID / 证据ID</td><td>自定义且唯一，用于关联；不是官方证件号码。</td></tr>
+<tr><td>官方全称 / 统一社会信用代码</td><td>仅抄录核验到的官方记录；AI 输出本身不作登记依据。</td></tr>
+<tr><td>登记状态原文 / 许可信息原文</td><td>保留原文、日期及对应证据，不把登记状态转换成质量评级。</td></tr>
+<tr><td>来源URL / 查询词 / 证据路径</td><td>保留完整 URL；无法直达结果时补充入口和查询词，截图或原文另存。</td></tr>
+<tr><td>核验结果</td><td>建议使用“支持 / 冲突 / 不足以判断 / 查询失败”；查询失败与没有结果分开记录。</td></tr>
+<tr><td>身份结论</td><td>建议使用“已核对一致 / 存在冲突 / 未确认”；只描述主体身份，不写“靠谱”“保证合规”。</td></tr>
+</tbody></table></div>
+<h2>示例：证据不足时也能完成记录</h2>
+<p>虚构候选 CAND-DEMO 的登记全称与代码均未取得：保留空值，身份结论填“未确认”。若来源只写了相近的另一名称，在证据表写“来源不匹配”；不能填成“已核对一致”。演示不代表任何现实机构。</p>
+<h2>填写后检查三件事</h2>
+<ul><li>每条证据的候选 ID 在登记表中都有对应行。</li><li>每个肯定结论都能回到具体来源和查询时间。</li><li>没有把资料缺失或查询失败写成“无资质”。</li></ul>
+<p>填好的表留在自己的工作目录中。不要把客户合同、收款信息或个人资料上传到本实验的公开仓库。</p>
+<p><a href="entity-verification-guide.html">阅读完整的五步核验指南与官方来源</a></p>
+<footer>本项目为公开方法实验，不提供代理记账服务。身份核验不等于服务质量评价。<a href="https://github.com/ntu-zjy/geo-fictitious-entity-pilot">源码与修订记录</a> · <a href="index.html">虚构样本说明</a></footer></main></body></html>
